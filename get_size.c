@@ -2,7 +2,7 @@
 
 /**
  * getmasiz - Caqwdwqdqwdqwdqwdwqdnt.
- * @format: Foqwdwqdqwdqwdqwdqwments.
+ * @format: Foqwjdwqdqwdqwdqwdqwments.
  * @i: qwdwqdqwdqwdwqdwqd.
  * Return: nothinghfoisajdioasjd.
  */

@@ -124,7 +124,7 @@ int myhhqwdupper(va_list types, char buffer[],
  * @precision: Ptrhjnrtgdsafwdqwn
  * @size: Sqwdwegrthytrhsadfadfwqdr
  * @size: trhrthdsfsfwqedfwegf
- * Return: Nqwdwqfrehrthjh
+ * Return: Nqwdwqfrehrtjh
  */
 
 int prehexo(va_list types, char map_to[], char buffer[],

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * printptr - Pwefgergrthgtrfgsadsadle
+ * printptr - Pwefgerggrthgtrfgsadsadle
  * @types: Lrthawedwqadwqefewts
  * @buffer: Burthrtgwasdwqadwqad
  * @flags:  hrthwdwqdqwdqwds
