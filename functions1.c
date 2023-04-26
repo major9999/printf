@@ -147,12 +147,14 @@ int print_hexa(va_list types, char map_to[], char buffer[],
 	buffer[BUFF_SIZE - 1] = '\0';
 
 	while (num > 0)
+
 	{
 		buffer[i--] = map_to[num % 16];
 		num /= 16;
 	}
 
 	if (flags & 8 && init_num != 0)
+
 	{
 		buffer[i--] = flag_ch;
 		buffer[i--] = '0';
