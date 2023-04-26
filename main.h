@@ -2,7 +2,7 @@
 #define MYFNAME_H
 
 #define BUFF_SIZE 1024
-#define UNUSED(xxz) (void)(xxz)
+#define UNWATEDX(xxz) (void)(xxz)
 
 #include <stdio.h>
 #include <stdarg.h>
@@ -21,7 +21,6 @@ struct fmt
 	int (*fn)(va_list, char[], int, int, int, int);
 };
 
-
 /**
  * typedef struct fmt fmt_t - qwdqwd poiiw qdoi9jdw.
  * @fmt: poqwdjioqwdjoiwqdioqw.
@@ -33,10 +32,8 @@ typedef struct fmt fmt_t;
 int _printf(const char *format, ...);
 
 
-
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
-
 int prehexo(va_list types, char map_to[],
 char buffer[], int flags, char flag_ch, int width, int precision, int size);
 int hanprinto(const char *fmt, int *i,
