@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_char - qwdwefer dgerdgrefg.
+ * printchsw - qwdwefer dgerdgrefg.
  * @types: werrger gregwdqwdwqd.
  * @buffer: rfgredfgw edfwqadwqad.
  * @flags:  ergre gref asddfsa.
@@ -11,7 +11,7 @@
  * Return: wqadqo ia qshdu iwqadhuwiqd.
  */
 
-int print_char(va_list types, char buffer[],
+int printchsw(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	char c = va_arg(types, int);
@@ -76,7 +76,7 @@ int print_string(va_list types, char buffer[],
 }
 
 /**
- * print_percent - oqiwdjiouqwdjwqd
+ * priperc - oqiwdjiouqwdjwqd
  * @types: Lrtjhrtghtgergents
  * @buffer: Bufqwdqgrtfhettetrg
  * @flags:  tyjtrgdsfsfrdfds
@@ -86,7 +86,7 @@ int print_string(va_list types, char buffer[],
  * Return: Nuqwdwgrehertjhrh
  */
 
-int print_percent(va_list types, char buffer[],
+int priperc(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 

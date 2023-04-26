@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * handle_print - Prqwdwqdwqdqwdqwde
+ * hanprinto - Prqwdwqdwqdqwdqwde
  * @fmt: Forwqdwqdwqd
  * @list: Lqwdwqded.
  * @ind: iqwd
@@ -13,15 +13,15 @@
  * Return: 1qwd
  */
 
-int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
+int hanprinto(const char *fmt, int *ind, va_list list, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	int i, unknow_len = 0, printed_chars = -1;
 	fmt_t fmt_types[] = {
-		{'c', print_char}, {'s', print_string}, {'%', print_percent},
+		{'c', printchsw}, {'s', print_string}, {'%', priperc},
 		{'i', print_int}, {'d', print_int}, {'b', print_binary},
-		{'u', print_unsigned}, {'o', print_octal}, {'x', print_hexadecimal},
-		{'X', print_hexa_upper}, {'p', print_pointer}, {'S', print_non_printable},
+		{'u', priusig}, {'o', primooctr}, {'x', prhexmodec},
+		{'X', myhhqwdupper}, {'p', printptr}, {'S', print_non_printable},
 		{'r', wdwoqwd_rev}, {'R', print_rot13string}, {'\0', NULL}
 	};
 	for (i = 0; fmt_types[i].fmt != '\0'; i++)

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_pointer - Pwefgergrthgtrfgsadsadle
+ * printptr - Pwefgergrthgtrfgsadsadle
  * @types: Lrthawedwqadwqefewts
  * @buffer: Burthrtgwasdwqadwqad
  * @flags:  hrthwdwqdqwdqwds
@@ -11,7 +11,7 @@
  * Return: qwdqwdqoidhjiouwq.
  */
 
-int print_pointer(va_list types, char buffer[],
+int printptr(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	char extra_c = 0, padd = ' ';

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_unsigned - joiqndwiuwqdiuqwd
+ * priusig - joiqndwiuwqdiuqwd
  * @types: Lergergdqwqwds
  * @buffer: Btrherfwqedwq
  * @flags:  Crgregreffwqedf
@@ -11,7 +11,7 @@
  * Return: Nuwqdqwdqwdqw
  */
 
-int print_unsigned(va_list types, char buffer[],
+int priusig(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	int i = BUFF_SIZE - 2;
@@ -36,7 +36,7 @@ int print_unsigned(va_list types, char buffer[],
 }
 
 /**
- * print_octal - wqdwegrthrhnrtsadfadf
+ * primooctr - wqdwegrthrhnrtsadfadf
  * @types: hsadfadwqfwetgfw
  * @buffer: ertqdqwdqwerhrth
  * @flags:  rthrtghaswdwaqd
@@ -46,7 +46,7 @@ int print_unsigned(va_list types, char buffer[],
  * Return: Nqwdfregtrehgerr
  */
 
-int print_octal(va_list types, char buffer[],
+int primooctr(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 
@@ -78,7 +78,7 @@ int print_octal(va_list types, char buffer[],
 }
 
 /**
- * print_hexadecimal - rhgergsadwqdwqdfdgfgn
+ * prhexmodec - rhgergsadwqdwqdfdgfgn
  * @types: Lqwdfrfgrthtrwerdwsf
  * @buffer: Bqwdwqfdeghergergt
  * @flags:  Crgrthgsadfasdwqdfqwrf
@@ -88,7 +88,7 @@ int print_octal(va_list types, char buffer[],
  * Return: erhgrthasdfsadadd
  */
 
-int print_hexadecimal(va_list types, char buffer[],
+int prhexmodec(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	return (print_hexa(types, "0123456789abcdef", buffer,
@@ -96,7 +96,7 @@ int print_hexadecimal(va_list types, char buffer[],
 }
 
 /**
- * print_hexa_upper - Phtrghewfwqdwqdsadasdn
+ * myhhqwdupper - Phtrghewfwqdwqdsadasdn
  * @types: Lisqwdqwwqdqwqw gqwd
  * @buffer: qwwewwqdqwdwq d qwdwqdqdrfqwe
  * @flags:  ergregasdwqdqwhgerth
@@ -106,7 +106,7 @@ int print_hexadecimal(va_list types, char buffer[],
  * Return: wqderwgrtefhrthdqwd
  */
 
-int print_hexa_upper(va_list types, char buffer[],
+int myhhqwdupper(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	return (print_hexa(types, "0123456789ABCDEF", buffer,
