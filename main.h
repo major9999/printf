@@ -33,6 +33,10 @@ typedef struct fmt fmt_t;
 int _printf(const char *format, ...);
 
 
+
+long int convert_size_number(long int num, int size);
+long int convert_size_unsgnd(unsigned long int num, int size);
+
 int print_hexa(va_list types, char map_to[],
 char buffer[], int flags, char flag_ch, int width, int precision, int size);
 int handle_print(const char *fmt, int *i,
@@ -81,8 +85,5 @@ int writefmpotrr(char buffer[], int ind, int length,
 int is_printable(char);
 int append_hexa_code(char, char[], int);
 int is_digit(char);
-
-long int convert_size_number(long int num, int size);
-long int convert_size_unsgnd(unsigned long int num, int size);
 
 #endif
