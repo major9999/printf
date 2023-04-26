@@ -46,8 +46,8 @@ int _printf(const char *format, ...)
 			mypbfuuser(buffer, &buff_ind);
 			flags = get_flags(format, &i);
 			width = get_width(format, &i, list);
-			precision = get_precision(format, &i, list);
-			size = get_size(format, &i);
+			precision = getpresccw(format, &i, list);
+			size = getmasiz(format, &i);
 			++i;
 			printed = hanprinto(format, &i, list, buffer,
 				flags, width, precision, size);

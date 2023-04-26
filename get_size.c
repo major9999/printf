@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * get_size - Caqwdwqdqwdqwdqwdwqdnt.
+ * getmasiz - Caqwdwqdqwdqwdqwdwqdnt.
  * @format: Foqwdwqdqwdqwdqwdqwments.
  * @i: qwdwqdqwdqwdwqdwqd.
  * Return: nothinghfoisajdioasjd.
  */
 
-int get_size(const char *format, int *i)
+int getmasiz(const char *format, int *i)
 {
 	int curr_i = *i + 1;
 	int size = 0;

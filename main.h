@@ -37,7 +37,7 @@ int _printf(const char *format, ...);
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
-int print_hexa(va_list types, char map_to[],
+int prehexo(va_list types, char map_to[],
 char buffer[], int flags, char flag_ch, int width, int precision, int size);
 int hanprinto(const char *fmt, int *i,
 va_list list, char buffer[], int flags, int width, int precision, int size);
@@ -61,20 +61,20 @@ int print_string(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int printptr(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
-int print_non_printable(va_list types, char buffer[],
+int thenonprin(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int get_flags(const char *format, int *i);
 int get_width(const char *format, int *i, va_list list);
-int get_precision(const char *format, int *i, va_list list);
-int get_size(const char *format, int *i);
+int getpresccw(const char *format, int *i, va_list list);
+int getmasiz(const char *format, int *i);
 int wdwoqwd_rev(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int wkwdkq(int is_negative, int ind,
 char buffer[],
 	int flags, int width, int precision, int size);
-int print_rot13string(va_list types, char buffer[],
+int prmyrot13(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
-int handle_write_char(char c, char buffer[],
+int writmychar(char c, char buffer[],
 	int flags, int width, int precision, int size);
 int write_fmnw(int is_positive, int ind, char buffer[],
 	int flags, int width, int precision, int size);
@@ -83,7 +83,7 @@ int owowmmq(int ind, char bff[], int flags, int width, int precision,
 int writefmpotrr(char buffer[], int ind, int length,
 	int width, int flags, char padd, char extra_c, int padd_start);
 int is_printable(char);
-int append_hexa_code(char, char[], int);
-int is_digit(char);
+int apxcode(char, char[], int);
+int isdigox(char);
 
 #endif

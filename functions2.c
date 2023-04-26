@@ -53,7 +53,7 @@ int printptr(va_list types, char buffer[],
 }
 
 /**
- * print_non_printable - Prints ascii codes in hexa of non printable chars
+ * thenonprin - Prints ascii codes in hexa of non printable chars
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
@@ -63,7 +63,7 @@ int printptr(va_list types, char buffer[],
  * Return: Number of chars printed
  */
 
-int print_non_printable(va_list types, char buffer[],
+int thenonprin(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	int i = 0, offset = 0;
@@ -82,7 +82,7 @@ int print_non_printable(va_list types, char buffer[],
 		if (is_printable(str[i]))
 			buffer[i + offset] = str[i];
 		else
-			offset += append_hexa_code(str[i], buffer, i + offset);
+			offset += apxcode(str[i], buffer, i + offset);
 
 		i++;
 	}
@@ -136,7 +136,7 @@ int wdwoqwd_rev(va_list types, char buffer[],
 }
 
 /**
- * print_rot13string - Prrehregwdwqdqwdqwdqw.
+ * prmyrot13 - Prrehregwdwqdqwdqwdqw.
  * @types: Lierhtrtehsadasdwqds
  * @buffer: Buerhergsadfsadfwerfewft
  * @flags:  Cqwdqwdregrthrtgwed
@@ -146,7 +146,7 @@ int wdwoqwd_rev(va_list types, char buffer[],
  * Return: Numqwfergrthtrjhwded
  */
 
-int print_rot13string(va_list types, char buffer[],
+int prmyrot13(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	char x;

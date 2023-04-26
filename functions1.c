@@ -91,7 +91,7 @@ int primooctr(va_list types, char buffer[],
 int prhexmodec(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
-	return (print_hexa(types, "0123456789abcdef", buffer,
+	return (prehexo(types, "0123456789abcdef", buffer,
 		flags, 'x', width, precision, size));
 }
 
@@ -109,12 +109,12 @@ int prhexmodec(va_list types, char buffer[],
 int myhhqwdupper(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
-	return (print_hexa(types, "0123456789ABCDEF", buffer,
+	return (prehexo(types, "0123456789ABCDEF", buffer,
 		flags, 'X', width, precision, size));
 }
 
 /**
- * print_hexa - Prherfsafdasdferwhgrfhdsdfrr
+ * prehexo - Prherfsafdasdferwhgrfhdsdfrr
  * @types: Lqwfrfherhasddqwf
  * @map_to: trhfsdafqwefewwrh
  * @buffer: Bwehrtehsdfdfewgfegtwe
@@ -127,7 +127,7 @@ int myhhqwdupper(va_list types, char buffer[],
  * Return: Nqwdwqfrehrthjh
  */
 
-int print_hexa(va_list types, char map_to[], char buffer[],
+int prehexo(va_list types, char map_to[], char buffer[],
 	int flags, char flag_ch, int width, int precision, int size)
 {
 	unsigned long int num = va_arg(types, unsigned long int);

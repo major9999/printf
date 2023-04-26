@@ -21,8 +21,8 @@ int hanprinto(const char *fmt, int *ind, va_list list, char buffer[],
 		{'c', printchsw}, {'s', print_string}, {'%', priperc},
 		{'i', print_int}, {'d', print_int}, {'b', print_binary},
 		{'u', priusig}, {'o', primooctr}, {'x', prhexmodec},
-		{'X', myhhqwdupper}, {'p', printptr}, {'S', print_non_printable},
-		{'r', wdwoqwd_rev}, {'R', print_rot13string}, {'\0', NULL}
+		{'X', myhhqwdupper}, {'p', printptr}, {'S', thenonprin},
+		{'r', wdwoqwd_rev}, {'R', prmyrot13}, {'\0', NULL}
 	};
 	for (i = 0; fmt_types[i].fmt != '\0'; i++)
 		if (fmt[*ind] == fmt_types[i].fmt)

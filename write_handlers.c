@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * handle_write_char - qwdwqdqwdqwdqwd
+ * writmychar - qwdwqdqwdqwdqwd
  * @c: qwdwqdqwdqwdwq
  * @buffer: qwdwqdwqdwqdqwq
  * @flags:  qwdqwdqwdqwdwqd
@@ -11,7 +11,7 @@
  * Return: qwefdwqefdewfewrsgregre.
  */
 
-int handle_write_char(char c, char buffer[],
+int writmychar(char c, char buffer[],
 	int flags, int width, int precision, int size)
 
 {
