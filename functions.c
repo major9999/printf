@@ -1,5 +1,58 @@
 #include "main.h"
 
+
+/**
+ * print_binary - Prireholqiwduijnwer
+ * @types: Liqwdqfgrehrtjhnts
+ * @buffer: Buftrhjdfwqdfwqnt
+ * @flags:  Caltrehwqdwqds
+ * @width: gqwdqwdfrhrehh.
+ * @precision: Prqwdwegertherhwqdon
+ * @size: Sqwedqwferhrthjther
+ * Return: Nqwdwq wqdwqwqgreher.
+ */
+
+int print_binary(va_list types, char buffer[],
+	int flags, int width, int precision, int size)
+{
+	unsigned int a[32];
+	unsigned int n, m, i, sum;
+	int count;
+
+	UNWATEDX(buffer);
+	UNWATEDX(flags);
+	UNWATEDX(width);
+	UNWATEDX(precision);
+	UNWATEDX(size);
+
+	m = 2147483648;
+	n = va_arg(types, unsigned int);
+
+	a[0] = n / m;
+
+	for (i = 1; i < 32; i++)
+
+	{
+		m /= 2;
+		a[i] = (n / m) % 2;
+	}
+
+	for (i = 0, sum = 0, count = 0; i < 32; i++)
+
+	{
+		sum += a[i];
+		if (sum || i == 31)
+
+		{
+			char z = '0' + a[i];
+
+			write(1, &z, 1);
+			count++;
+		}
+	}
+	return (count);
+}
+
 /**
  * printchsw - qwdwefer dgerdgrefg.
  * @types: werrger gregwdqwdwqd.
@@ -143,56 +196,4 @@ int print_int(va_list types, char buffer[],
 	i++;
 
 	return (write_fmnw(is_negative, i, buffer, flags, width, precision, size));
-}
-
-/**
- * print_binary - Prireholqiwduijnwer
- * @types: Liqwdqfgrehrtjhnts
- * @buffer: Buftrhjdfwqdfwqnt
- * @flags:  Caltrehwqdwqds
- * @width: gqwdqwdfrhrehh.
- * @precision: Prqwdwegertherhwqdon
- * @size: Sqwedqwferhrthjther
- * Return: Nqwdwq wqdwqwqgreher.
- */
-
-int print_binary(va_list types, char buffer[],
-	int flags, int width, int precision, int size)
-{
-	unsigned int a[32];
-	unsigned int n, m, i, sum;
-	int count;
-
-	UNWATEDX(buffer);
-	UNWATEDX(flags);
-	UNWATEDX(width);
-	UNWATEDX(precision);
-	UNWATEDX(size);
-
-	m = 2147483648;
-	n = va_arg(types, unsigned int);
-
-	a[0] = n / m;
-
-	for (i = 1; i < 32; i++)
-
-	{
-		m /= 2;
-		a[i] = (n / m) % 2;
-	}
-
-	for (i = 0, sum = 0, count = 0; i < 32; i++)
-
-	{
-		sum += a[i];
-		if (sum || i == 31)
-
-		{
-			char z = '0' + a[i];
-
-			write(1, &z, 1);
-			count++;
-		}
-	}
-	return (count);
 }
