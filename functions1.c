@@ -54,7 +54,7 @@ int primooctr(va_list types, char buffer[],
 	unsigned long int num = va_arg(types, unsigned long int);
 	unsigned long int init_num = num;
 
-	UNUSED(width);
+	UNWATEDX(width);
 
 	num = convert_size_unsgnd(num, size);
 
@@ -134,7 +134,7 @@ int prehexo(va_list types, char map_to[], char buffer[],
 	int i = BUFF_SIZE - 2;
 	unsigned long int init_num = num;
 
-	UNUSED(width);
+	UNWATEDX(width);
 	num = convert_size_unsgnd(num, size);
 
 	if (num == 0)

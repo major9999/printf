@@ -36,11 +36,11 @@ int print_string(va_list types, char buffer[],
 	int length = 0, i;
 	char *str = va_arg(types, char *);
 
-	UNUSED(buffer);
-	UNUSED(flags);
-	UNUSED(width);
-	UNUSED(precision);
-	UNUSED(size);
+	UNWATEDX(buffer);
+	UNWATEDX(flags);
+	UNWATEDX(width);
+	UNWATEDX(precision);
+	UNWATEDX(size);
 	if (str == NULL)
 	{
 		str = "(null)";
@@ -90,12 +90,12 @@ int priperc(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 
-	UNUSED(types);
-	UNUSED(buffer);
-	UNUSED(flags);
-	UNUSED(width);
-	UNUSED(precision);
-	UNUSED(size);
+	UNWATEDX(types);
+	UNWATEDX(buffer);
+	UNWATEDX(flags);
+	UNWATEDX(width);
+	UNWATEDX(precision);
+	UNWATEDX(size);
 
 	return (write(1, "%%", 1));
 
@@ -163,11 +163,11 @@ int print_binary(va_list types, char buffer[],
 	unsigned int n, m, i, sum;
 	int count;
 
-	UNUSED(buffer);
-	UNUSED(flags);
-	UNUSED(width);
-	UNUSED(precision);
-	UNUSED(size);
+	UNWATEDX(buffer);
+	UNWATEDX(flags);
+	UNWATEDX(width);
+	UNWATEDX(precision);
+	UNWATEDX(size);
 
 	m = 2147483648;
 	n = va_arg(types, unsigned int);
