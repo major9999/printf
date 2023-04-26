@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * get_width - Caqwdqwdqwdqwting
+ * get_width - Caqwdqwdqwdqwtingh
  * @format: Fqwdqwdqwqwdqwments.
  * @i: List of arqwdqwwqdrinted.
  * @list: lisqwdqwdt of aب90ioqjwdioujwqidojts.
