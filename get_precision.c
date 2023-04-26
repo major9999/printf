@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * getpresccw - Cqwdqwdwqdqwdqwdqwdng
+ * getpresccw - Cqwdqwdwqdqwdqwdqwdngh
  * @format: Foqwdqwdwqdqwqwduments
  * @i: Lisqwdwqdt ofqwdqwdqwqwdqwdinted.
  * @list: liqwdwqdst oqwdqwdf argqwdwqduments.
