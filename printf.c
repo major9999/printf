@@ -25,7 +25,7 @@ unsigned int format_printf(va_list args, const char *format, unsigned int *i)
 			break;
 		case 'd':
 		case 'i':
-			printed_char += print_integer(va_arg(args, int));
+			printed_char += premyintwqi(va_arg(args, int));
 			break;
 		case 'b':
 		case 'o':
